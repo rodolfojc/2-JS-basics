@@ -52,7 +52,7 @@ console.log(firstName + lastName);
 
 /*
 BASIC OPERATORS
-*/
+
 
 var year, yearRodolfo;
 now = 2019;
@@ -75,4 +75,38 @@ console.log(rodolfoOlder);
 //TYPEOF OPERATOR
 console.log(typeof rodolfoOlder);
 console.log(typeof yearRodolfo);
+
+*/
+
+/*
+OPERATORS PRECEDENCE
+*/
+
+var now = 2019;
+var yearRodolfo = 1987;
+var fullAge = 32;
+
+// MULTIPLE OPERATORS
+var isFullAge = now - yearRodolfo >= fullAge;
+
+// GROUPING
+var ageRodolfo = now - yearRodolfo;
+var ageMark = 38;
+var average = (ageRodolfo + ageMark) / 2;
+console.log(average);
+
+// MULTIPLE ASSIGNMENTS - ASSOCIATIVITY
+var x,y;
+x = y = (3+5) * 4 - 6;
+console.log(x, y);
+
+// MORE OPERATORS
+
+x = x * 2;
+x *= 2;
+x += 10;
+x++;
+x--;
+
+
 
