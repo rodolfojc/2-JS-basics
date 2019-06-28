@@ -27,7 +27,7 @@ console.log(job);
 
 /*
 VARIABLES MUTATION AND COERCION
-*/
+
 
 var firstName = 'Rodolfo'
 var age = 28;
@@ -48,5 +48,31 @@ alert(firstName + ' is a ' +age + ' years old, ' + job + ' is he married?' + isM
 var lastName = prompt('What is his last name');
 console.log(firstName + lastName);
 
+*/
 
+/*
+BASIC OPERATORS
+*/
+
+var year, yearRodolfo;
+now = 2019;
+ageRodolfo = 32;
+ageMark = 38;
+
+//MATH OPERATORS
+yearRodolfo = now - ageRodolfo;
+yearMark = now - ageMark;
+console.log(yearRodolfo);
+
+console.log(now + 2);
+console.log(now * 2);
+console.log(now / 2);
+
+//LOGICAL OPERATORS
+var rodolfoOlder = ageRodolfo > ageMark;
+console.log(rodolfoOlder);
+
+//TYPEOF OPERATOR
+console.log(typeof rodolfoOlder);
+console.log(typeof yearRodolfo);
 
