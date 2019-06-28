@@ -80,7 +80,7 @@ console.log(typeof yearRodolfo);
 
 /*
 OPERATORS PRECEDENCE
-*/
+
 
 var now = 2019;
 var yearRodolfo = 1987;
@@ -107,6 +107,27 @@ x *= 2;
 x += 10;
 x++;
 x--;
+*/
+
+
+/*
+CODE CHALLENGE 1
+*/
+
+var markMass = 70;
+var markHeight = 1.90;
+var rodolfoMass = 75;
+var rodolfoHeight = 1.87;
+
+var markBMI = markMass / (markHeight * markHeight);
+var rodolBMI = rodolfoMass / (rodolfoHeight * rodolfoHeight);
+
+var isRodolfoBMIhigher = rodolBMI >= markBMI;
+
+console.log('Is Rodolfo BMI highter than Mark BMI? ' + isRodolfoBMIhigher);
+console.log('Rodolfo BMI: ' +rodolBMI);
+console.log('Mark BMI: ' + markBMI);
+
 
 
 
