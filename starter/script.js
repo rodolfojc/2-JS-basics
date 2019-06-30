@@ -242,7 +242,7 @@ switch(true){
 
 /*
 TRUTHY AND FALSY VALUES 
-*/
+
 
 // FALSY VALUES : UNDEFINED, NULL, 0, '', NaN
 // TRUTHY VALUES : NOT FALSY
@@ -266,3 +266,47 @@ if (heigth == '23'){
 }else {
     console.log();
 }
+
+*/
+
+/*
+CODING CHALLENGE 2
+*/
+
+var johnsTeam = 89 + 120 + 103;
+var mikeTeam = 116 + 94 + 123;
+var maryTeam = 97 + 134 + 105;
+
+var aveJohnTeam = johnsTeam / 3;
+var aveMikeTeam = mikeTeam / 3;
+var aveMaryTeam = maryTeam / 3;
+
+aveJohnTeam = 116;
+aveMikeTeam = 117;
+aveMaryTeam = 117;
+
+
+if ( aveJohnTeam > aveMikeTeam && aveJohnTeam > aveMaryTeam ) {
+    console.log('John\'s Team is the winner!');
+} else if ( aveMikeTeam > aveJohnTeam && aveMikeTeam > aveMaryTeam) {
+    console.log('Mike\'s Team is the winner!');
+} else if ( aveMaryTeam > aveJohnTeam && aveMaryTeam > aveMikeTeam) {
+    console.log('Mary\'s Team is the winner!');
+
+// DRAW
+} else if ( aveMikeTeam === aveJohnTeam && aveMikeTeam > aveMaryTeam) {
+    console.log('There is a draw between Mike\s Team and John\'s Team');
+} else if ( aveMikeTeam === aveMaryTeam && aveMikeTeam > aveJohnTeam) {
+    console.log('There is a draw between Mike\s Team and Mary\'s Team');
+} else if ( aveJohnTeam === aveMaryTeam && aveJohnTeam > aveMikeTeam) {
+    console.log('There is a draw between John\s Team and Mary\'s Team');
+} else if ( aveJohnTeam === aveMaryTeam && aveJohnTeam === aveMikeTeam) {
+    console.log('There is a draw between John\s Team, Mary\'s Team and Mike\s Team');
+}                 
+
+console.log('John\'s Team average: ' + aveJohnTeam);
+console.log('Mike\'s Team average: ' + aveMikeTeam);
+console.log('Mary\'s Team average: ' + aveMaryTeam);
+
+
+
