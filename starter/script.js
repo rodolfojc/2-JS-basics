@@ -112,7 +112,7 @@ x--;
 
 /*
 CODE CHALLENGE 1
-*/
+x
 
 var markMass = 70;
 var markHeight = 1.90;
@@ -122,12 +122,40 @@ var rodolfoHeight = 1.87;
 var markBMI = markMass / (markHeight * markHeight);
 var rodolBMI = rodolfoMass / (rodolfoHeight * rodolfoHeight);
 
-var isRodolfoBMIhigher = rodolBMI >= markBMI;
+var isRodolfoBMIhigher = rodolBMI > markBMI;
 
-console.log('Is Rodolfo BMI highter than Mark BMI? ' + isRodolfoBMIhigher);
+console.log('Is Rodolfo\'s BMI highter than Mark BMI? ' + isRodolfoBMIhigher);
 console.log('Rodolfo BMI: ' +rodolBMI);
 console.log('Mark BMI: ' + markBMI);
 
+*/
 
+/*
+IF / ELSE STATEMENTS
+*/
 
+var firstName = 'Rodolfo';
+var civilStatus = 'Single';
+var isMarried = false;
+
+// if(isMarried){}
+if(civilStatus === 'Married') {
+    console.log(firstName + 'is Married');
+} else {
+    console.log(firstName + 'is Single');
+}
+
+var markMass = 70;
+var markHeight = 1.90;
+var rodolfoMass = 75;
+var rodolfoHeight = 1.87;
+
+var markBMI = markMass / (markHeight * markHeight);
+var rodolBMI = rodolfoMass / (rodolfoHeight * rodolfoHeight);
+
+if (rodolBMI > markBMI) {
+    console.log('Rodolfo\s BMI is higher than Mark\s BMI');
+} else {
+    console.log('Mark\s BMI is higher than Rodolfo\s BMI');
+}
 
