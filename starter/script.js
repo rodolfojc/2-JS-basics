@@ -182,7 +182,7 @@ if (age < 13){
 
 /*
 TERNACY OPERATOR AND SWITCH STATEMENTS
-*/
+
 
 var firstName = 'Rodolfo'; 
 var age = 32;
@@ -192,6 +192,7 @@ age >= 18 ? console.log(firstName + ' drinks beer!!') : console.log(' drinks jui
 
 var drink = age >= 18 ? 'beer' : 'juice';
 console.log(drink);
+*/
 
 /*
 if ( age >= 18){
@@ -201,6 +202,7 @@ if ( age >= 18){
 }
 */
 
+/*
 //SWITH STATEMENTS
 
 var job = 'Teacher';
@@ -236,4 +238,31 @@ switch(true){
         
 }
 
+*/
 
+/*
+TRUTHY AND FALSY VALUES 
+*/
+
+// FALSY VALUES : UNDEFINED, NULL, 0, '', NaN
+// TRUTHY VALUES : NOT FALSY
+
+var heigth;
+
+heigth = 23;
+
+if (heigth || heigth === 0){
+    console.log('Variable is defined');
+} else {
+    console.log('Variable HAS not been defined');
+}
+
+//EQUALITY OPERATORS
+// === Strict Equality Operator
+// == Type Coercion
+
+if (heigth == '23'){
+    console.log('The == operator does type coercion');
+}else {
+    console.log();
+}
