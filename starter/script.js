@@ -163,7 +163,7 @@ if (rodolBMI > markBMI) {
 
 /*
 BOOLEAN LOGIC
-*/
+
 
 var firstName = 'Rodolfo'; 
 var age = 45;
@@ -178,6 +178,62 @@ if (age < 13){
     console.log(firstName + ' is a old man'); 
 }
 
+*/
 
+/*
+TERNACY OPERATOR AND SWITCH STATEMENTS
+*/
+
+var firstName = 'Rodolfo'; 
+var age = 32;
+
+//TERNACY 
+age >= 18 ? console.log(firstName + ' drinks beer!!') : console.log(' drinks juice');
+
+var drink = age >= 18 ? 'beer' : 'juice';
+console.log(drink);
+
+/*
+if ( age >= 18){
+    drink = 'beer';
+} else {
+    drink = 'juice';
+}
+*/
+
+//SWITH STATEMENTS
+
+var job = 'Teacher';
+switch(job) {
+    case 'Teacher':
+    case 'Instructor':
+        console.log(firstName + ' teaches how to code');
+        break;
+    case 'Driver':
+        console.log(firstName + ' drives an uber in Dublin');
+        break;
+    case 'Designer':
+        console.log(firstName + ' designs websites');
+        break;
+    default:
+        console.log(firstName + ' does something else');
+}
+
+age = 10; 
+
+switch(true){
+    case age < 13:
+        console.log(firstName + ' is a boy');
+        break;
+    case age >= 13 && age < 20:
+        console.log(firstName + ' is a teenager');
+        break;
+    case age >= 20 && age < 30:
+        console.log(firstName + ' is a man');
+        break;
+    default:
+        console.log(firstName + ' is a old man')
+        
+}
 
 
