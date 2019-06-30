@@ -132,7 +132,7 @@ console.log('Mark BMI: ' + markBMI);
 
 /*
 IF / ELSE STATEMENTS
-*/
+
 
 var firstName = 'Rodolfo';
 var civilStatus = 'Single';
@@ -158,4 +158,26 @@ if (rodolBMI > markBMI) {
 } else {
     console.log('Mark\s BMI is higher than Rodolfo\s BMI');
 }
+
+*/
+
+/*
+BOOLEAN LOGIC
+*/
+
+var firstName = 'Rodolfo'; 
+var age = 45;
+
+if (age < 13){
+    console.log(firstName + ' is a boy');
+} else if ( age >= 13 && age < 20){ //BETWEEN 13 AND 20
+    console.log(firstName + ' is a teenager');       
+} else if ( age >= 20 && age < 30){ //BETWEEN 20 AND 30
+    console.log(firstName + ' is a man');       
+} else {
+    console.log(firstName + ' is a old man'); 
+}
+
+
+
 
