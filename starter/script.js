@@ -271,7 +271,7 @@ if (heigth == '23'){
 
 /*
 CODING CHALLENGE 2
-*/
+
 
 var johnsTeam = 89 + 120 + 103;
 var mikeTeam = 116 + 94 + 123;
@@ -308,6 +308,40 @@ if ( aveJohnTeam > aveMikeTeam && aveJohnTeam > aveMaryTeam ) {
 console.log('John\'s Team average: ' + aveJohnTeam);
 console.log('Mike\'s Team average: ' + aveMikeTeam);
 console.log('Mary\'s Team average: ' + aveMaryTeam);
+
+*/
+
+/*
+FUNCTIONS
+*/
+
+function calculateAge(birthYear) {
+    return 2019 - birthYear;
+}
+
+var ageRodolfo = calculateAge(1987);
+var ageCarlos = calculateAge(1990);
+var ageAngel = calculateAge(1955);
+console.log(ageRodolfo, ageCarlos, ageAngel);
+
+function yearsUntilRetirement(year, firstName){
+    
+    var age = calculateAge(year);
+    var retirement = 65 - age;
+    
+    if ( retirement > 0){
+        console.log(firstName + ' retires in: '+ retirement + ' years...');
+    } else {
+        console.log(firstName + ' is already retired.');
+    }
+    
+    
+}
+
+yearsUntilRetirement(1987, 'Rodolfo');
+yearsUntilRetirement(1990, 'Carlos');
+yearsUntilRetirement(1950, 'Angel');
+
 
 
 
