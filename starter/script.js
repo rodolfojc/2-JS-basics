@@ -281,9 +281,10 @@ var aveJohnTeam = johnsTeam / 3;
 var aveMikeTeam = mikeTeam / 3;
 var aveMaryTeam = maryTeam / 3;
 
-aveJohnTeam = 116;
-aveMikeTeam = 117;
-aveMaryTeam = 117;
+//TESTING
+//aveJohnTeam = 116;
+//aveMikeTeam = 117;
+//aveMaryTeam = 117;
 
 
 if ( aveJohnTeam > aveMikeTeam && aveJohnTeam > aveMaryTeam ) {
@@ -293,7 +294,7 @@ if ( aveJohnTeam > aveMikeTeam && aveJohnTeam > aveMaryTeam ) {
 } else if ( aveMaryTeam > aveJohnTeam && aveMaryTeam > aveMikeTeam) {
     console.log('Mary\'s Team is the winner!');
 
-// DRAW
+// DRAW CAUSES
 } else if ( aveMikeTeam === aveJohnTeam && aveMikeTeam > aveMaryTeam) {
     console.log('There is a draw between Mike\s Team and John\'s Team');
 } else if ( aveMikeTeam === aveMaryTeam && aveMikeTeam > aveJohnTeam) {
