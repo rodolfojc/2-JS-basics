@@ -313,7 +313,7 @@ console.log('Mary\'s Team average: ' + aveMaryTeam);
 
 /*
 FUNCTIONS
-*/
+
 
 function calculateAge(birthYear) {
     return 2019 - birthYear;
@@ -342,6 +342,32 @@ yearsUntilRetirement(1987, 'Rodolfo');
 yearsUntilRetirement(1990, 'Carlos');
 yearsUntilRetirement(1950, 'Angel');
 
+*/
+
+/*
+FUNTIONS STATEMENTS AND EXPRESSIONS
 
 
+//FUNTION DECLARATION
+// var whatDoYouDo = function(job,firstName) {}
+
+//FUNTION EXPRESSION
+var whatDoYouDo = function(job,firstName) {
+    switch(job){
+        case 'Teacher':
+            return firstName + ' teaches how to code';
+        case 'Driver':
+            return firstName + ' drives an Uber';
+        case 'Designer':
+            return firstName + ' build a website';
+        default:
+            return firstName + ' does something else';
+    }
+}
+
+console.log(whatDoYouDo('Teacher', 'Rodolfo'));
+console.log(whatDoYouDo('Driver', 'Carlos'));
+console.log(whatDoYouDo('Hacker', 'Juan'));
+
+*/
 
