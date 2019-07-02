@@ -411,7 +411,7 @@ console.log(isDriver);
 
 /*
 CODING CHALLENGE 3
-*/
+
 
 var restOne = 124;
 var restTwo = 48;
@@ -440,6 +440,38 @@ var tipsAndBill = [tipCalculator(restOne)+restOne, tipCalculator(restTwo)+restTw
 console.log(tips);
 console.log(tipsAndBill);
 
+*/
+
+/*********************
+OBJECTS AND PROPERTIES
+*/
+
+// OBJECT LITERAL
+var rodolfo = {
+    firstName: 'Rodolfo',
+    lastName: 'Carvajal',
+    birthYear: 1987,
+    family: ['Karla, Chriss, Krisbell'],
+    job: 'Hardware Support',
+    isMarried: false
+    
+};
+
+console.log(rodolfo.firstName);
+console.log(rodolfo['lastName']);
+var x = 'birthYear';
+console.log(rodolfo[x]);
+
+rodolfo.job = 'Developer';
+rodolfo['isMarried'] = true;
+
+console.log(rodolfo.job, rodolfo.isMarried);
+
+// NEW OBJECTS SYNTAX
+var carlos = new Object();
+carlos.name = 'Carlos';
+carlos['lastName'] = 'Velar';
+console.log(carlos);
 
 
 
