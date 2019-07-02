@@ -444,7 +444,7 @@ console.log(tipsAndBill);
 
 /*********************
 OBJECTS AND PROPERTIES
-*/
+
 
 // OBJECT LITERAL
 var rodolfo = {
@@ -473,8 +473,29 @@ carlos.name = 'Carlos';
 carlos['lastName'] = 'Velar';
 console.log(carlos);
 
+*/
 
+/*********************
+OBJECTS AND METHOD
+*/
 
+var rodolfo = {
+    firstName: 'Rodolfo',
+    lastName: 'Carvajal',
+    birthYear: 1987,
+    family: ['Karla, Chriss, Krisbell'],
+    job: 'Hardware Support',
+    isMarried: false,
+    calcAge: function(){
+        //this.age = 2019 - this.birthYear;
+        return 2019 - this.birthYear;
+    }
+    
+};
+
+console.log(rodolfo.calcAge());
+
+rodolfo.age = rodolfo.calcAge(); 
 
 
 
