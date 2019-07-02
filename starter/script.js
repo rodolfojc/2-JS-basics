@@ -409,10 +409,36 @@ console.log(isDriver);
 */
 
 
+/*
+CODING CHALLENGE 3
+*/
 
+var restOne = 124;
+var restTwo = 48;
+var restThree = 268;
 
+function tipCalculator(bill){
+    
+    var tip;
+    
+    if (bill < 50){
+        tip = bill*0.2;
+    } else if (bill >= 50 && bill <=200){
+        tip = bill*0.15;
+    } else {
+        tip = bill*0.10;
+    }
+    
+    return tip;
+    
+}
 
+var tips = [tipCalculator(restOne), tipCalculator(restTwo), tipCalculator(restThree)];
 
+var tipsAndBill = [tipCalculator(restOne)+restOne, tipCalculator(restTwo)+restTwo, tipCalculator(restThree)+restThree];
+
+console.log(tips);
+console.log(tipsAndBill);
 
 
 
