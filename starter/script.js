@@ -477,7 +477,7 @@ console.log(carlos);
 
 /*********************
 OBJECTS AND METHOD
-*/
+
 
 var rodolfo = {
     firstName: 'Rodolfo',
@@ -497,6 +497,43 @@ console.log(rodolfo.calcAge());
 
 rodolfo.age = rodolfo.calcAge(); 
 
+*/
+
+/*
+CODING CHALLEGEN 4
+*/
+
+var rodolfo = {
+    firstName: 'Rodolfo',
+    lastName: 'Carvajal',
+    mass: 75,
+    height: 1.87,
+    calcBMI: function(){
+        return (this.mass / (this.height*this.height));
+    }
+};
+
+var mark = {
+    firstName: 'Mark',
+    lastName: 'Zambrano',
+    mass: 73,
+    height: 1.90,
+    calcBMI: function(){
+        return (this.mass / (this.height*this.height));
+    }
+};
+
+rodolfo.bmi = rodolfo.calcBMI();
+mark.bmi = mark.calcBMI();
 
 
+if (rodolfo.bmi > mark.bmi){
+    console.log(rodolfo.firstName + ' ' +rodolfo.lastName + ' has higter BMI: ' + rodolfo.bmi);
+} else if (rodolfo.bmi < mark.bmi){
+    console.log(mark.firstName + ' ' +mark.lastName + ' has higter BMI: ' + mark.bmi);      
+} else {
+    console.log('Rodolfo and Mark have the same BMI: ' + rodolfo.bmi);
+}
 
+console.log(rodolfo.firstName+' '+ rodolfo.lastName + ' BMI: ' + rodolfo.bmi);
+console.log(mark.firstName+' '+ mark.lastName + ' BMI: ' + mark.bmi);
