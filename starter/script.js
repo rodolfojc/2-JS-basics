@@ -371,3 +371,53 @@ console.log(whatDoYouDo('Hacker', 'Juan'));
 
 */
 
+/*
+ARRAYS
+
+
+var names = ['Rodolfo', 'Juan', 'Cesar'];
+var years = new Array('1987', '1986', '1983');
+
+console.log(names);
+console.log(names.length);
+
+// MUTATE ARRAY DATA
+names[1] = 'Ben';
+console.log(names);
+
+names[names.length] = 'Lucy';
+console.log(names);
+
+// DIFFERENT DATA TYPE
+
+var rodolfo = ['Rodolfo', 'Carvajal', 32, 1987, false];
+
+rodolfo.push('blue');
+rodolfo.unshift('Mr');
+console.log(rodolfo);
+
+rodolfo.pop();
+rodolfo.shift();
+console.log(rodolfo);
+
+console.log(rodolfo.indexOf(1987));
+
+var isDriver = rodolfo.indexOf('Driver') === -1 ? ' Rodolfo is not a driver' : 'Rodolfo is a driver';
+
+console.log(isDriver);
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
