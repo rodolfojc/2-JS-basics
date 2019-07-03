@@ -501,7 +501,7 @@ rodolfo.age = rodolfo.calcAge();
 
 /*
 CODING CHALLEGEN 4
-*/
+
 
 var rodolfo = {
     firstName: 'Rodolfo',
@@ -537,3 +537,50 @@ if (rodolfo.bmi > mark.bmi){
 
 console.log(rodolfo.firstName+' '+ rodolfo.lastName + ' BMI: ' + rodolfo.bmi);
 console.log(mark.firstName+' '+ mark.lastName + ' BMI: ' + mark.bmi);
+
+*/
+
+/***************************
+LOOP AND INTERATION
+
+
+for (var i = 0; i < 10; i++) {
+    console.log(i);
+}
+
+var rodolfo = ['Rodolfo', 'Carvajal', 1987, false];
+
+// FOR
+for (var i=0; i < rodolfo.length; i++){
+    console.log(rodolfo[i]);
+}
+
+// WHILE
+var i = 0;
+while(i < rodolfo.length){
+    console.log(rodolfo[i]);
+    i++;
+}
+
+
+// CONTINUE AND BREAK STATEMENTS
+
+var rodolfo = ['Rodolfo', 'Carvajal', 1987, false, 'blue'];
+
+// FOR
+for (var i=0; i < rodolfo.length; i++){
+    if(typeof rodolfo[i]!== 'string') continue;     console.log(rodolfo[i]);
+    }
+
+for (var i=0; i < rodolfo.length; i++){
+    if(typeof rodolfo[i]!== 'string') break;     console.log(rodolfo[i]);
+    }
+
+for (var i = rodolfo.length -1 ; i >=0 ; i--){
+    console.log(rodolfo[i]);
+}
+
+*/
+    
+
+
