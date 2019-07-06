@@ -670,3 +670,30 @@ if(aveJohnTips > aveMarkTips){
 }
 
 
+/*
+
+ALTERATIVE METHOD - LECTURE
+
+
+var johnFamily = {
+    
+    bills: [124, 48, 268, 180, 42],
+    tipsBill: function(){
+        this.tips = [];
+        this.finalPaid = []; 
+        for(var i = 0; i < this.bills.length; i++){
+            if (this.bills[i] < 50){
+                this.tips[i] = this.bills[i]*0.2;
+            } else if (this.bills[i] >= 50 && this.bills[i] <=200){
+                this.tips[i] = this.bills[i]*0.15;
+            } else {
+                this.tips[i] = this.bills[i]*0.10;
+            }
+            
+            this.finalPaid[i] = this.tips[i] + this.bills[i];
+    }
+            
+}       
+};
+
+*/
