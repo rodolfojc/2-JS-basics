@@ -581,6 +581,92 @@ for (var i = rodolfo.length -1 ; i >=0 ; i--){
 }
 
 */
+
+/*
+CODING CHALLENGE 5
+*/
+
+var johnFamily = {
     
+    bills: [124, 48, 268, 180, 42],
+    tipsBill: function(){
+        var tips = [];
+        for(var i = 0; i < this.bills.length; i++){
+            if (this.bills[i] < 50){
+                tips[i] = this.bills[i]*0.2;
+            } else if (this.bills[i] >= 50 && this.bills[i] <=200){
+                tips[i] = this.bills[i]*0.15;
+            } else {
+                tips[i] = this.bills[i]*0.10;
+            }
+    }
+        return tips;
+    
+}       
+};
+
+
+var totalBills = johnFamily.tipsBill();
+var totalPaid = [];
+
+for (var i = 0; i < totalBills.length; i++){
+    totalPaid[i] = totalBills[i] + johnFamily.bills[i];
+}
+
+
+console.log(totalBills);
+console.log(totalPaid);
+
+var markFamily = {
+    
+    bills: [77, 375, 110, 45],
+    tipsBill: function(){
+        var tips = [];
+        for(var i = 0; i < this.bills.length; i++){
+            if (this.bills[i] < 100){
+                tips[i] = this.bills[i]*0.2;
+            } else if (this.bills[i] >= 100 && this.bills[i] <=300){
+                tips[i] = this.bills[i]*0.10;
+            } else {
+                tips[i] = this.bills[i]*0.25;
+            }
+    }
+        return tips;
+    
+}       
+};
+
+var totalBillsMark = markFamily.tipsBill();
+var totalPaidMark = [];
+
+for (var i = 0; i < totalBillsMark.length; i++){
+    totalPaidMark[i] = totalBillsMark[i] + markFamily.bills[i];
+}
+
+console.log(totalBillsMark);
+console.log(totalPaidMark);
+
+function calcAverageTips(tips){
+    
+    var average = 0;
+    
+    for (var i=0; i < tips.length; i++) {
+        average += tips[i];
+    }
+    
+    return average / tips.length;
+}
+
+var aveJohnTips = calcAverageTips(totalBills);
+console.log(aveJohnTips);
+
+var aveMarkTips = calcAverageTips(totalBillsMark);
+console.log(aveMarkTips);
+
+if(aveJohnTips > aveMarkTips){
+ console.log('John\'s Family Paid more tips in average!');  
+} else {
+ console.log('Mark\'s Family Paid more tips in average!'); 
+}
 
 
